@@ -1,0 +1,16 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    margin-bottom: 0;
+  }
+  .emoji {
+    font-size: 4em;
+  }
+  button,
+  a {
+    margin-top: 3em;
+  }
+}

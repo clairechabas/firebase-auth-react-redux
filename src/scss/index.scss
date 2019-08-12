@@ -1,0 +1,17 @@
+html,
+body,
+input,
+button {
+  font-family: "Capriola", sans-serif;
+}
+
+// VARIABLES
+$primary-color: #29b1cc;
+
+// PARTIALS
+@import "App";
+@import "Button";
+@import "Login";
+@import "Page";
+@import "Loader";
+@import "Spinner";

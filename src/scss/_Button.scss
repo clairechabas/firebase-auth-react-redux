@@ -1,0 +1,44 @@
+%btn {
+  padding: 1em 3em;
+  border-radius: 20px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border: 2px solid $primary-color;
+  &:hover {
+    cursor: pointer;
+  }
+}
+%btn-on {
+  background-color: $primary-color;
+  color: #fff;
+}
+%btn-off {
+  background-color: #fff;
+  color: $primary-color;
+}
+.btn-login {
+  @extend %btn;
+  @extend %btn-on;
+  &:hover {
+    box-shadow: 0 10px 20px rgba($primary-color, 0.3);
+  }
+}
+.btn-switch {
+  @extend %btn;
+  @extend %btn-off;
+  &:hover {
+    @extend %btn-on;
+  }
+}
+.btn-link {
+  color: $primary-color;
+  border: none;
+  border-bottom: 1px solid $primary-color;
+  padding: 0;
+  margin-left: 2em;
+  &:hover {
+    border-bottom: none;
+    cursor: pointer;
+  }
+}
